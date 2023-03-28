@@ -3,23 +3,23 @@
 :root {
   /* Primary */
   --primary-color: #007AF3;
-  --Scissors-Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
-  --Paper-Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
-  --Rock-Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
-  --Lizard-Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
-  --Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+  --Scissors-Gradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+  --Paper-Gradient: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+  --Rock-Gradient: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+  --Lizard-Gradient: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
+  --Cyan: hsl(189, 59%, 53%), hsl(189, 58%, 57%);
   /* Neutral */
   --Dark-Text: hsl(229, 25%, 31%);
   --Score-Text: hsl(229, 64%, 46%);
   --Header-Outline: hsl(217, 16%, 45%);  
   /* Background */
-  --Radial-Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+  --background-color: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 
 /* Genaral */
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  background-color: var(--Radial-Gradient);
+  background-image: var(--background-color);
   position: absolute;
   margin: 0;
   padding: 0;
@@ -29,15 +29,15 @@ body {
 }
 
 /* Mobile Display */
-@media only screen and (min-width: 370px) {
+/* @media only screen and (min-width: 370px) {
   body {
-    background-color: var(--Radial-Gradient);
+    background-color: var(--background-color);
   }
-}
+} */
 
 /* Desktop Display */
-@media only screen and (min-width: 1366px) {
+/* @media only screen and (min-width: 1366px) {
   body {
-    background-color: var(--Radial-Gradient);
+    background-color: var(--background-color);
   }
-}
+} */
