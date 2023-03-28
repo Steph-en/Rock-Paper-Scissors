@@ -17,9 +17,13 @@
 }
 
 /* Genaral */
+html {
+  background-color: hsl(237, 49%, 15%);
+  /* background-image: var(--Radial-Gradient); */
+}
+
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  background-color: var(--Radial-Gradient);
   position: absolute;
   margin: 0;
   padding: 0;
