@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# Rock-Paper-Scissors
+### Rock-Paper-Scissors
 A repo to document the code for the famous game rock, paper, scissors with a twist 
-=======
+
 ### Rules
 
 If the player wins, they gain 1 point. If the computer wins, the player loses one point.
