@@ -21,37 +21,27 @@
 
 /* Genaral */
 body {
-	background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+	background-color: hsl(237, 49%, 15%);
+	background-image: var(--background-image);
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	color: aliceblue;
-	background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 	position: absolute;
+	top: 0;
+	right:calc(50, 50);
+	transform: translate(0, 0);
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
 }
 
 #main {
-  /* justify-content: center;
-  align-items: center; */
-}
-
-.head {
-	display: flex;
-	margin: 30px;
-	padding: 5px 20px;
-	border: 3px solid hsl(217, 16%, 45%);
-	border-radius: 8px;
-}
-
-.title img {
-	width: 7rem;
-	height: auto;
-	padding-top: 8px;
+	justify-content: center;
+  align-items: center;
 }
 
 /* Title and score section */
 .head {
+	max-width: 100%;
 	display: flex;
 	margin: 30px;
 	padding: 15px 20px;
@@ -67,7 +57,7 @@ body {
 
 div.score {
 	position: relative;
-	left: calc(50% - 5px);
+	left: calc(40% - 5px);
 	background-color: aliceblue;
 	color: hsl(229, 64%, 46%);
 	width: 100px;
@@ -80,7 +70,7 @@ div.score {
 }
 
 .score p {
-	font-size: 11px;
+	font-size: 12px;
 	margin-top: 8px;
 	margin-bottom: 5px;
 	letter-spacing: 1.5px;

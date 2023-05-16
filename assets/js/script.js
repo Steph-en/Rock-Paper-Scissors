@@ -1,5 +1,5 @@
 // 
-const scorePoints = document.querySelector("scoreIndex")
+const scoreDisplay = document.getElementById("scoreIndex");
 
 // 
 const resultDisplay = document.getElementById("result");
@@ -15,7 +15,8 @@ const choice = document.querySelectorAll("button");
 let playerChoice;
 let computerChoice;
 let result;
-
+var points = scoreDisplay.innerHTML;
+// points++;
 
 // 
 choice.forEach(choice => choice.addEventListener('click', (e) => {
@@ -38,44 +39,45 @@ function getComputerChoice() {
     computerChoice = "scissore"
   }
   computerChoiceDisplay.innerHTML = computerChoice;
+  // setTimeout(() => {
+  //   computerChoiceDisplay.innerHTML = computerChoice;
+  // }, 1000);
 }
 
 function getResults() {
-  if( computerChoice === playerChoice ) {
+  if (computerChoice === playerChoice) {
     result = "DRAW"
   }
-  if( computerChoice === "rock" && playerChoice === "paper") {
-    result = "YOU WIN"
+  else if (computerChoice === "rock" && playerChoice === "paper") {
+    result = "YOU WIN";
+    // console.log(points += 1);
+    scoreDisplay.innerHTML = points++;
   }
-  if( computerChoice === "rock" && playerChoice === "scissors") {
+  else if (computerChoice === "rock" && playerChoice === "scissors") {
     result = "YOU LOSE"
+    // scoreDisplay.innerHTML = points--;
   }
-  if( computerChoice === "paper" && playerChoice === "scissors") {
-    result = "YOU WIN"
+  else if (computerChoice === "paper" && playerChoice === "scissors") {
+    result = "YOU WIN";
+    // console.log(points += 1);
+    scoreDisplay.innerHTML = points++;
   }
-  if( computerChoice === "paper" && playerChoice === "rock") {
+  else if (computerChoice === "paper" && playerChoice === "rock") {
+    result = "YOU LOSE";
+    // console.log(points += 1);
+    // scoreDisplay.innerHTML = points--;
+  }
+  else if (computerChoice === "scissors" && playerChoice === "rock") {
+    result = "YOU WIN";
+    // console.log(points += 1);
+    scoreDisplay.innerHTML = points++;
+  }
+  else {
     result = "YOU LOSE"
+    // scoreDisplay.innerHTML = points--;
   }
-  if( computerChoice === "scissors" && playerChoice === "rock") {
-    result = "YOU WIN"
-  }
-  if( computerChoice === "scissors" && playerChoice === "paper") {
-    result = "YOU LOSE"
-  } 
   resultDisplay.innerHTML = result;
+  // setTimeout(() => {
+  //   resultDisplay.innerHTML = result;
+  // }, 2000);
 }
-
-function getPoints() {
-  
-}
-
-// Option 2
-// const resultDisplay2 = document.createElement("h1");
-
-// // 
-// const playerChoiceDisplay2 = document.createElement("h1");
-// const computerChoiceDisplay2 = document.createElement("h1");
-
-// // 
-// const game = document.getElementById("game");
-// game.append(resultDisplay2, playerChoiceDisplay2, computerChoiceDisplay2)
