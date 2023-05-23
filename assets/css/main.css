@@ -60,3 +60,53 @@ body {
   line-height: 19px;
   letter-spacing: 2px;
 }
+
+.hands{
+  background-image: url(/assets/images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 440px;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.hands img{
+  cursor: pointer;
+}
+
+.hand:hover{
+  transform: scale(105%);
+  transition: all .35s;
+  /* opacity: 0.9; */
+}
+
+.hand{
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper{
+  margin-right: 40px;
+  border: 18px solid hsl(230, 89%, 65%);
+  box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
+}
+
+.scissors{
+  margin-left: 40px;
+  border: 18px solid  hsl(40, 84%, 53%);
+  box-shadow: 0 6px 0 0 hsl(40, 94%, 40%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
+}
+
+.rock{
+  border: 18px solid hsl(349, 70%, 56%);
+  box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
+}
