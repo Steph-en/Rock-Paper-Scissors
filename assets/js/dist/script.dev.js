@@ -1,5 +1,6 @@
 "use strict";
 
+// Split login page 
 var left = document.querySelector('.left');
 var right = document.querySelector('.right');
 var container = document.querySelector('.container');
