@@ -15,13 +15,6 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
 
-  Score
-  Rules
-
-  You Lose
-
-
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -43,7 +36,7 @@
         <img src="assets/images/logo.svg" alt="logo">
       </div>
       <div class="score">
-        <p>score</p>
+        <p>Score</p>
         <h1>0</h1>
       </div>
     </div>
@@ -54,10 +47,10 @@
         <img src="assets/images/icon-paper.svg" alt="paper" onclick="pickUserHand('paper')">
       </div>
       <div class="scissors hand">
-        <img src="assets/images/icon-scissors.svg" alt="scissors" onclick="pickUserHand('sicssors')">
+        <img src="assets/images/icon-scissors.svg" alt="scissors" onclick="pickUserHand('scissors')">
       </div>
       <div class="rock hand">
-        <img src="assets/images/icon-rock.svg" alt="rock" onclick="pickUserHand('rock ')">
+        <img src="assets/images/icon-rock.svg" alt="rock" onclick="pickUserHand('rock')">
       </div>
     </div>
 
@@ -66,27 +59,32 @@
       <div class="userhand">
         <h1>You Picked</h1>
         <div class="choiceContainer">
-          <img src="/assets/images/icon-paper.svg" alt="">
+          <img id="userChoiceHand" src="/assets/images/icon-scissors.svg" alt="hand">
         </div>
       </div>
-      <div class="ref">
-        <div class="decission">
+      <div class="judge">
+        <div class="decision">
           <h1>You Win</h1>
         </div>
-        <div class="newgame">
+        <div class="newgame" onclick="playAgain()">
           Play Again
-        </div> 
+        </div>
       </div>
       <div class="computerhand">
         <h1>The House Picked</h1>
         <div class="choiceContainer">
-          <img src="/assets/images/icon-paper.svg" alt="">
+          <img id="computerChoiceHand" src="/assets/images/icon-paper.svg" alt="hand">
         </div>
       </div>
     </div>
   </div>
 
-
+  <!-- Rules -->
+  <div class="rules">
+    <div class="rule">
+      Rules
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

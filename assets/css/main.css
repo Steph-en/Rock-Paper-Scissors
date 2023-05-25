@@ -50,11 +50,11 @@ body {
 }
 
 .score h1 {
-  color:  hsl(229, 25%, 31%);
+  color: hsl(229, 25%, 31%);
   font-size: 56px;
 }
 
-.score p{
+.score p {
   color: hsl(229, 64%, 46%);
   font-size: 16;
   font-weight: 600;
@@ -63,7 +63,7 @@ body {
 }
 
 /* Rock Paper Scissors Box Styling */
-.hands{
+.hands {
   background-image: url(/assets/images/bg-triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -75,17 +75,17 @@ body {
   margin-top: 100px;
 }
 
-.hands .hand{
+.hands .hand {
   cursor: pointer;
   transition: all .35s;
 }
 
-.hands .hand:hover{
+.hands .hand:hover {
   transform: scale(105%);
   opacity: 0.86;
 }
 
-.hand{
+.hand {
   width: 150px;
   height: 150px;
   background: white;
@@ -97,25 +97,73 @@ body {
 }
 
 /* Rock Paper Scissors Styling */
-.paper{
+.paper {
   margin-right: 45px;
   border: 18px solid hsl(230, 89%, 65%);
   box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
 
-.scissors{
+.scissors {
   margin-left: 45px;
-  border: 18px solid  hsl(40, 84%, 53%);
+  border: 18px solid hsl(40, 84%, 53%);
   box-shadow: 0 6px 0 0 hsl(40, 94%, 40%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
 }
 
-.rock{
+.rock {
   border: 18px solid hsl(349, 70%, 56%);
   box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
 
 /* The Contest Styling */
-.contest{
+.contest {
   width: 900px;
+  display: none;
+  margin-top: 100px;
+}
+
+.contest img {
+  width: 200px;
+  height: 200px;
+}
+
+.contest>div {
+  flex: 1;
+}
+
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contest .choiceContainer {
   display: flex;
+  justify-content: center;
+}
+
+.judge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.judge h1 {
+  font-size: 45px;
+}
+
+.newgame {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: hsl(229, 25%, 31%);
+  transition: all 0.15s;
+}
+
+.newgame:hover {
+  background-color: bisque;
+  transform: translate3d(0, -2px, 0);
 }
