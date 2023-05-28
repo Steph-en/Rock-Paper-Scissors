@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Score Board / Header Styling */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreboard {
+  width: 700px;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin-top: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin-left: 30px;
+}
+
+.score {
+  width: 150px;
+  height: 114px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score h1 {
+  color: hsl(229, 25%, 31%);
+  font-size: 56px;
+}
+
+.score p {
+  color: hsl(229, 64%, 46%);
+  font-size: 16;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2px;
+}
+
+/* Rock Paper Scissors Box Styling */
+.hands {
+  background-image: url(/assets/images/bg-pentagon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 440px;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.hands .hand {
+  cursor: pointer;
+  transition: all .35s;
+}
+
+.hands .hand:hover {
+  transform: scale(105%);
+  opacity: 0.86;
+}
+
+.hand {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rock Paper Scissors Styling */
+.paper {
+  margin-top: 60px;
+  margin-right: 60px;
+  border: 18px solid hsl(230, 89%, 65%);
+  box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
+}
+
+.scissors {
+  margin-top: 60px;
+  margin-left: 60px;
+  border: 18px solid hsl(40, 84%, 53%);
+  box-shadow: 0 6px 0 0 hsl(40, 94%, 40%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
+}
+
+.rock {
+  margin-top: 45px;
+  border: 18px solid hsl(349, 70%, 56%);
+  box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
+}
+
+.lizard {
+  margin-top: 45px;
+  margin-left: 45px;
+  border: 18px solid hsl(261, 72%, 63%);
+  box-shadow: 0 6px 0 0 hsl(261, 82%, 53%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
+}
+
+.spock {
+  position: relative;
+  bottom: 450px;
+  border: 18px solid hsl(189, 58%, 57%);
+  box-shadow: 0 6px 0 0 hsl(189, 68%, 47%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
+}
+
+/* The Contest Styling */
+.contest {
+  width: 900px;
+  display: none;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.contest img {
+  width: 130px;
+  height: 130px;
+}
+
+.contest>div {
+  flex: 1;
+}
+
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contest .choiceContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.judge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.judge h1 {
+  font-size: 45px;
+}
+
+.newgame {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: hsl(229, 25%, 31%);
+  transition: all 0.15s;
+}
+
+.newgame:hover {
+  background-color: bisque;
+  transform: translate3d(0, -2px, 0);
+}
+
+.userhand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userhand>div {
+  width: 90px;
+  height: 90px;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 200px;
+}
+
+.computerhand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.computerhand>div {
+  width: 90px;
+  height: 90px;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 200px;
+}
+
+/* Rock Paper Scissors Styling Contest Box */
+#userChoiceHand .paper {
+  margin-right: 45px;
+  border: 18px solid hsl(230, 89%, 65%);
+  box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
+}
+
+#userChoiceHand .scissors {
+  margin-left: 45px;
+  border: 18px solid hsl(40, 84%, 53%);
+  box-shadow: 0 6px 0 0 hsl(40, 94%, 40%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
+}
+
+#userChoiceHand .rock {
+  border: 18px solid hsl(349, 70%, 56%);
+  box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
+}
+
+/* Rules Section */
+.rules {
+  width: 900px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.rule {
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 2px;
+  padding: 12px 35px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .35s;
+}
+
+.rule:hover {
+  color: hsl(229, 25%, 31%);
+  background-color: white;
+  transform: scale(110%);
+}
+
+.ruleimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  flex-direction: column;
+  padding: 90px;
+  border-radius: 20px;
+  background-color: white;
+  display: none;
+}
+
+.ruleimghead {
+  position: relative;
+  bottom: 55px;
+  color: hsl(229, 25%, 31%);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: all .53s;
+}
+
+.ruleimghead h1 {
+  letter-spacing: 2px;
+}
+
+.ruleimghead i {
+  cursor: pointer;
+  font-size: 30px;
+  color: darkgray;
+}
+
+@media screen and (min-width: 375px) {
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scoreboard {
+    width: 600px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Rock Paper Scissors Box Styling */
+  .hands {
+    background-image: url(/assets/images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 440px;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+  /* The Contest Styling */
+  .contest {
+    width: 600px;
+    display: none;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+}

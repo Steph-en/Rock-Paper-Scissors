@@ -1,45 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
 
-  <!-- Css -->
-  <link rel="stylesheet" href="main.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons.css">
   
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
+  
+  <!-- Css -->
+  <link rel="stylesheet" href="/assets/css/bonus.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      color: white;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div class="wrapper">
+    <!-- Tittle and Score Box -->
+    <div class="scoreboard">
+      <div class="title">
+        <img src="assets/images/logo.svg" alt="logo">
+      </div>
+      <div class="score">
+        <p>Score</p>
+        <h1>0</h1>
+      </div>
+    </div>
 
+    <!-- Rock Paper Scissors Box -->
+    <div class="hands">
+      <div class="paper hand">
+        <img src="assets/images/icon-paper.svg" alt="paper" onclick="pickUserHand('paper')">
+      </div>
+      <div class="scissors hand">
+        <img src="assets/images/icon-scissors.svg" alt="scissors" onclick="pickUserHand('scissors')">
+      </div>
+      <div class="rock hand">
+        <img src="assets/images/icon-rock.svg" alt="rock" onclick="pickUserHand('rock')">
+      </div>
+      <div class="lizard hand">
+        <img src="assets/images/icon-lizard.svg" alt="scissors" onclick="pickUserHand('lizard')">
+      </div>
+      <div class="spock hand">
+        <img src="assets/images/icon-spock.svg" alt="rock" onclick="pickUserHand('spock')">
+      </div>
+    </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <!-- Context Box -->
+    <div class="contest">
+      <div class="userhand">
+        <h1>You Picked</h1>
+        <div class="choiceContainer">
+          <img id="userChoiceHand" src="/assets/images/icon-scissors.svg" alt="hand">
+        </div>
+      </div>
+      <div class="judge">
+        <div class="decision">
+          <h1>You Win</h1>
+        </div>
+        <div class="newgame" onclick="playAgain()">
+          Play Again
+        </div>
+      </div>
+      <div class="computerhand">
+        <h1>The House Picked</h1>
+        <div class="choiceContainer">
+          <img id="computerChoiceHand" src="/assets/images/icon-paper.svg" alt="hand">
+        </div>
+      </div>
+    </div>
+
+    <!-- Rules -->
+    <div class="rules">
+      <div class="rule" onclick="rules()">
+        Rules 
+      </div>
+      <div class="ruleimg">
+        <div class="ruleimghead">
+          <h1>Rules</h1>
+          <i class="bi bi-x-lg"></i>
+        </div>
+        <img src="/assets/images/image-rules-bonus.svg" alt="rules">
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Steph-en/Rock-Paper-Scissors">Stephen Boateng Appah</a>.
+    </div>
   </div>
 
   <!-- Js -->
-  <script src="main.js"></script>
+  <script src="assets/js/bonus.js"></script>
 
 </body>
+
 </html>
