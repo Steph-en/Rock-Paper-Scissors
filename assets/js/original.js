@@ -6,7 +6,11 @@ const handOptions = {
   "rock": "/assets/images/icon-rock.svg"
 }
 
+// Declearation of The Score value
 let Score = 0;
+
+// Assignment of The score Value to The Local Storage Value
+document.querySelector(".score h1").innerText = localStorage.getItem("score");
 
 const pickUserHand = (hand) => {
   console.log(hand)
@@ -31,7 +35,7 @@ const pickUserHand = (hand) => {
 
 const pickComputerHand = () => {
   let hands = ["paper", "scissors", "rock"];
-
+  
   let computerHand = hands[Math.floor(Math.random() * 3)];
 
   console.log(computerHand);
@@ -78,10 +82,16 @@ const setDecision = (decision) => {
 const setScore = (score) => {
   console.log(score);
 
-  // Let Score = the score value the perform increase 
+  // Let Score = the score value to perform increase 
   Score = score;
 
-  document.querySelector(".score h1").innerText = score;
+  document.querySelector(".score h1").innerText = Score;
+
+  // Saving the score in Local storage
+  localStorage.setItem('score', Score);
+
+  // Getting the Score form Local Storage
+  document.querySelector(".score h1").innerText = localStorage.getItem("score");
 }
 
 // Continue Game Function

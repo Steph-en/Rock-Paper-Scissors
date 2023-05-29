@@ -4,9 +4,7 @@
 var handOptions = {
   "paper": "/assets/images/icon-paper.svg",
   "scissors": "/assets/images/icon-scissors.svg",
-  "rock": "/assets/images/icon-rock.svg",
-  "lizard": "/assets/images/icon-lizard.svg",
-  "spock": "/assets/images/icon-spock.svg"
+  "rock": "/assets/images/icon-rock.svg"
 }; // Declearation of The Score value
 
 var Score = 0; // Assignment of The score Value to The Local Storage Value
@@ -30,8 +28,8 @@ var pickUserHand = function pickUserHand(hand) {
 };
 
 var pickComputerHand = function pickComputerHand() {
-  var hands = ["paper", "scissors", "rock", "lizard", "spock"];
-  var computerHand = hands[Math.floor(Math.random() * 5)];
+  var hands = ["paper", "scissors", "rock"];
+  var computerHand = hands[Math.floor(Math.random() * 3)];
   console.log(computerHand); // Computer choice
 
   document.getElementById("computerChoiceHand").src = handOptions[computerHand];
@@ -48,29 +46,11 @@ var judge = function judge(userHand, computerHand) {
     setScore(Score + 1);
   }
 
-  if (userHand == "paper" && computerHand == "lizard") {
-    setDecision("You Lose");
-  }
-
-  if (userHand == "paper" && computerHand == "spock") {
-    setDecision("You Win");
-    setScore(Score + 1);
-  }
-
   if (userHand == "scissors" && computerHand == "rock") {
     setDecision("You Lose");
   }
 
   if (userHand == "scissors" && computerHand == "paper") {
-    setDecision("You Win");
-    setScore(Score + 1);
-  }
-
-  if (userHand == "scissors" && computerHand == "spock") {
-    setDecision("You Lose");
-  }
-
-  if (userHand == "scissors" && computerHand == "lizard") {
     setDecision("You Win");
     setScore(Score + 1);
   }
@@ -82,51 +62,6 @@ var judge = function judge(userHand, computerHand) {
   if (userHand == "rock" && computerHand == "scissors") {
     setDecision("You Win");
     setScore(Score + 1);
-  }
-
-  if (userHand == "rock" && computerHand == "spock") {
-    setDecision("You Lose");
-  }
-
-  if (userHand == "rock" && computerHand == "lizard") {
-    setDecision("You Win");
-    setScore(Score + 1);
-  }
-
-  if (userHand == "lizard" && computerHand == "paper") {
-    setDecision("You Win");
-    setScore(Score + 1);
-  }
-
-  if (userHand == "lizard" && computerHand == "scissors") {
-    setDecision("You Lose");
-  }
-
-  if (userHand == "lizard" && computerHand == "spock") {
-    setDecision("You Win");
-    setScore(Score + 1);
-  }
-
-  if (userHand == "lizard" && computerHand == "rock") {
-    setDecision("You Lose");
-  }
-
-  if (userHand == "spock" && computerHand == "scissors") {
-    setDecision("You Win");
-    setScore(Score + 1);
-  }
-
-  if (userHand == "spock" && computerHand == "lizard") {
-    setDecision("You Lose");
-  }
-
-  if (userHand == "spock" && computerHand == "rock") {
-    setDecision("You Win");
-    setScore(Score + 1);
-  }
-
-  if (userHand == "spock" && computerHand == "paper") {
-    setDecision("You Lose");
   } else if (userHand == computerHand) {
     setDecision("It's a Tie");
   }
@@ -140,10 +75,10 @@ var setDecision = function setDecision(decision) {
 
 
 var setScore = function setScore(score) {
-  console.log(score); // Let Score = the score value the perform increase 
+  console.log(score); // Let Score = the score value to perform increase 
 
   Score = score;
-  document.querySelector(".score h1").innerText = score; // Saving the score in Local storage
+  document.querySelector(".score h1").innerText = Score; // Saving the score in Local storage
 
   localStorage.setItem('score', Score); // Getting the Score form Local Storage
 

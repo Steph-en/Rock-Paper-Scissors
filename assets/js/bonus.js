@@ -8,7 +8,11 @@ const handOptions = {
   "spock": "/assets/images/icon-spock.svg"
 }
 
+// Declearation of The Score value
 let Score = 0;
+
+// Assignment of The score Value to The Local Storage Value
+document.querySelector(".score h1").innerText = localStorage.getItem("score");
 
 const pickUserHand = (hand) => {
   console.log(hand)
@@ -134,6 +138,12 @@ const setScore = (score) => {
   Score = score;
 
   document.querySelector(".score h1").innerText = score;
+
+  // Saving the score in Local storage
+  localStorage.setItem('score', Score);
+
+  // Getting the Score form Local Storage
+  document.querySelector(".score h1").innerText = localStorage.getItem("score");
 }
 
 // Continue Game Function
