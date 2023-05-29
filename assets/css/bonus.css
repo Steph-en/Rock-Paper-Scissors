@@ -299,7 +299,8 @@ body {
   color: darkgray;
 }
 
-@media screen and (min-width: 375px) {
+/* Media Queries*/
+@media (max-width: 375px) {
   .wrapper {
     width: 100vw;
     height: 100vh;
@@ -331,13 +332,24 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 200px;
+    margin-bottom: 150px;
   }
 
   /* The Contest Styling */
   .contest {
     width: 600px;
     display: none;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 250px;
+    margin-bottom: 200px;
+  }
+
+  /* Rules Section */
+  .rules {
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
