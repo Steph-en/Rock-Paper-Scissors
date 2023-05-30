@@ -137,3 +137,10 @@ h1 {
         width: 12rem;
     }
 }
+
+@media screen and (max-width: 42rem) {
+    h1 {
+        font-size: 1.6rem;
+        color: #fff;
+    }
+}

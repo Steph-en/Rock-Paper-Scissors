@@ -294,31 +294,15 @@ body {
   }
 
   .scoreboard {
-    width: 450px;
-    height: 280px;
+    width: 700px;
     border: 1px solid white;
     border-radius: 15px;
-    margin-top: 50px;
-    padding: 10px 0;
+    margin-top: 20px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .title img{
-    width: 130px;
-  }
-
-  .score {
-    width: 120px;
-    height: 90px;
-    background-color: white;
-    border-radius: 10px;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    scale: 65%;
   }
 
   /* Rock Paper Scissors Box Styling */
@@ -333,21 +317,23 @@ body {
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 100px;
+    scale: 90%;
   }
 
   /* The Contest Styling */
   .contest {
     width: 600px;
     display: none;
-    margin-top: 250px;
-    margin-bottom: 200px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    scale: 70%;
   }
 
   /* Rules Section */
   .rules {
     width: 600px;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
