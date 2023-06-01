@@ -39,6 +39,7 @@
       <div class="title">
         <img src="assets/images/logo.svg" alt="logo">
       </div>
+      
       <div class="score">
         <p>Score</p>
         <h1>0</h1>
@@ -50,9 +51,11 @@
       <div class="paper hand">
         <img src="assets/images/icon-paper.svg" alt="paper" onclick="pickUserHand('paper')">
       </div>
+
       <div class="scissors hand">
         <img src="assets/images/icon-scissors.svg" alt="scissors" onclick="pickUserHand('scissors')">
       </div>
+
       <div class="rock hand">
         <img src="assets/images/icon-rock.svg" alt="rock" onclick="pickUserHand('rock')">
       </div>
@@ -61,23 +64,25 @@
     <!-- Context Box -->
     <div class="contest">
       <div class="userhand">
-        <h1>You Picked</h1>
         <div class="choiceContainer">
           <img id="userChoiceHand" src="/assets/images/icon-scissors.svg" alt="hand">
         </div>
+        <h1>You Picked</h1>
       </div>
+
+      <div class="computerhand">
+        <div class="choiceContainer">
+          <img id="computerChoiceHand" src="/assets/images/icon-paper.svg" alt="hand">
+        </div>
+        <h1>The House Picked</h1>
+      </div>
+
       <div class="judge">
         <div class="decision">
           <h1>You Win</h1>
         </div>
         <div class="newgame" onclick="playAgain()">
           Play Again
-        </div>
-      </div>
-      <div class="computerhand">
-        <h1>The House Picked</h1>
-        <div class="choiceContainer">
-          <img id="computerChoiceHand" src="/assets/images/icon-paper.svg" alt="hand">
         </div>
       </div>
     </div>
@@ -87,6 +92,7 @@
       <div class="rule" onclick="rules()">
         Rules 
       </div>
+
       <div class="ruleimg">
         <div class="ruleimghead">
           <h1>Rules</h1>
