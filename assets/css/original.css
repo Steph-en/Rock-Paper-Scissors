@@ -389,7 +389,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 10px;
     scale: 60%;
@@ -408,7 +407,7 @@ body {
   /* Rules Section */
   .rules {
     width: 600px;
-    margin-top: 1px;
+    margin-top: 10px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
