@@ -85,8 +85,8 @@ body {
 }
 
 .hand {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   background: white;
   border-radius: 80px;
   display: flex;
@@ -97,35 +97,35 @@ body {
 
 /* Rock Paper Scissors Styling */
 .paper {
-  margin-top: 60px;
-  margin-right: 60px;
+  margin-top: 70px;
+  margin-right: 70px;
   border: 18px solid hsl(230, 89%, 65%);
   box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
 
 .scissors {
-  margin-top: 60px;
-  margin-left: 60px;
+  margin-top: 70px;
+  margin-left: 70px;
   border: 18px solid hsl(40, 84%, 53%);
   box-shadow: 0 6px 0 0 hsl(40, 94%, 40%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
 }
 
 .rock {
-  margin-top: 45px;
+  margin-top: 50px;
   border: 18px solid hsl(349, 70%, 56%);
   box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
 
 .lizard {
-  margin-top: 45px;
-  margin-left: 45px;
+  margin-top: 50px;
+  margin-left: 50px;
   border: 18px solid hsl(261, 72%, 63%);
   box-shadow: 0 6px 0 0 hsl(261, 82%, 53%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
 }
 
 .spock {
   position: relative;
-  bottom: 450px;
+  bottom: 470px;
   border: 18px solid hsl(189, 58%, 57%);
   box-shadow: 0 6px 0 0 hsl(189, 68%, 47%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
@@ -222,27 +222,27 @@ body {
 }
 
 /* Rock Paper Scissors Styling Contest Box */
-#userChoiceHand .paper {
+#computerChoiceHand .paper {
   margin-right: 45px;
   border: 18px solid hsl(230, 89%, 65%);
   box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
 
-#userChoiceHand .scissors {
+#computerChoiceHand .scissors {
   margin-left: 45px;
   border: 18px solid hsl(40, 84%, 53%);
   box-shadow: 0 6px 0 0 hsl(40, 94%, 40%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
 }
 
-#userChoiceHand .rock {
+#computerChoiceHand .rock {
   border: 18px solid hsl(349, 70%, 56%);
   box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
 
 /* Rules Section */
 .rules {
-  width: 900px;
-  margin-top: 30px;
+  width: 90vw;
+  margin-top: 130px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: row;
@@ -314,13 +314,13 @@ body {
     width: 600px;
     border: 1px solid white;
     border-radius: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
     height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    scale: 75%;
+    scale: 60%;
   }
 
   /* Rock Paper Scissors Box Styling */
@@ -333,19 +333,25 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    scale: 80%;
+    scale: 70%;
   }
 
   /* The Contest Styling */
   .contest {
-    width: 480px;
-    flex-wrap: wrap;
+    width: 600px;
     display: none;
-    margin-top: 75px;
-    margin-bottom: 20px;
-    scale: 76%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    scale: 50%;
+  }
+
+  .judge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Rules Section */

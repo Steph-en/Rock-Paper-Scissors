@@ -396,11 +396,10 @@ body {
 
   /* The Contest Styling */
   .contest {
-    width: 480px;
-    flex-wrap: wrap;
+    width: 600px;
     display: none;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     scale: 55%;
   }
 
