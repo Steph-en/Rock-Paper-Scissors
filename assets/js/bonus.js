@@ -120,7 +120,7 @@ const judge = (userHand, computerHand) => {
     setScore(Score - 1);
   }
   else if (userHand == computerHand) {
-    setDecision("It's a Tie");
+    setDecision("");
   }
 }
 

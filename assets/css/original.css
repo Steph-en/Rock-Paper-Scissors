@@ -30,6 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 .title {
@@ -117,7 +118,7 @@ body {
 .contest {
   width: 900px;
   display: none;
-  margin-top: 80px;
+  margin-top: 140px;
   margin-bottom: 100px;
 }
 
@@ -224,8 +225,8 @@ body {
 
 /* Rules Section */
 .rules {
-  width: 900px;
-  margin-top: 30px;
+  width: 90vw;
+  margin-top: 130px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: row;
@@ -298,7 +299,7 @@ body {
     width: 600px;
     border: 1px solid white;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 0;
     height: 150px;
     display: flex;
     justify-content: space-between;
@@ -313,13 +314,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     width: 400px;
-    height: 350px;
+    height: 380px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 30px;
-    scale: 60%;
+    scale: 65%;
   }
 
   /* The Contest Styling */
@@ -328,7 +329,7 @@ body {
     display: none;
     margin-top: 100px;
     margin-bottom: 120px;
-    scale: 70%;
+    scale: 60%;
   }
 
   /* Rules Section */
@@ -340,7 +341,7 @@ body {
     flex-direction: row;
     justify-content: center;
   }
-
+  
   .ruleimg {
     position: absolute;
     top: 35%;
@@ -365,12 +366,12 @@ body {
     align-items: center;
     overflow: hidden;
   }
-
+  
   .scoreboard {
     width: 600px;
     border: 1px solid white;
     border-radius: 15px;
-    margin-top: 5px;
+    margin-top: 0;
     height: 150px;
     display: flex;
     justify-content: space-between;
@@ -385,7 +386,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     width: 500px;
-    height: 350px;
+    height: 380px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -396,34 +397,95 @@ body {
 
   /* The Contest Styling */
   .contest {
-    width: 600px;
+    width: 700px;
+    padding: 20px 0px;
     display: none;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    scale: 55%;
+    margin-top: 0;
+    margin-bottom: 50px;
+    scale: 50%;
+  }
+
+  .contest h1 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .contest>div {
+    flex: 1;
+  }
+
+  .judge {
+    position: absolute;
+    top: 90%;
+    left: 48%;
+    transform: translate(-50%, 50%);
+    scale: 90%;
+  }
+
+  .judge h1 {
+    font-size: 4em;
+    letter-spacing: 2px;
+  }
+
+  .newgame {
+    background-color: white;
+    letter-spacing: 2px;
+    padding: 30px 3em;
+    border-radius: 16px;
+    cursor: pointer;
+    color: hsl(229, 25%, 31%);
+    font-size: 1.2em;
+    font-weight: bolder;
+    transition: all 0.15s;
+    scale: 125%;
   }
 
   /* Rules Section */
   .rules {
-    width: 600px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    /* width: 600px; */
+    margin-top: 60px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     scale: 80%;
   }
 
+  .rule {
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 2px;
+    padding: 12px 65px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .35s;
+  }
+
   .ruleimg {
-    position: absolute;
-    top: -900%;
-    left: 16%;
-    transform: translate(-10%, -10%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
-    padding: 90px;
+    /* padding: 90px; */
     border-radius: 20px;
     background-color: white;
+    letter-spacing: 2px;
     display: none;
-    scale: 80%;
+    scale: 50%;
+  }
+
+  .ruleimg img {
+    padding: 0;
+    margin: 0;
+  }
+
+  .attribution {
+    font-size: 8px
   }
 }

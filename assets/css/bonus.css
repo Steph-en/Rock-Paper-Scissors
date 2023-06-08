@@ -30,6 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 .title {
@@ -71,7 +72,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 .hands .hand {
@@ -97,35 +98,36 @@ body {
 
 /* Rock Paper Scissors Styling */
 .paper {
-  margin-top: 70px;
-  margin-right: 70px;
+  margin-top: 80px;
+  margin-right: 90px;
   border: 18px solid hsl(230, 89%, 65%);
   box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
 
 .scissors {
-  margin-top: 70px;
+  margin-top: 80px;
   margin-left: 70px;
   border: 18px solid hsl(40, 84%, 53%);
   box-shadow: 0 6px 0 0 hsl(40, 94%, 40%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
 }
 
 .rock {
-  margin-top: 50px;
+  margin-top: 60px;
+  margin-right: 45px;
   border: 18px solid hsl(349, 70%, 56%);
   box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
 
 .lizard {
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 60px;
+  margin-left: 40px;
   border: 18px solid hsl(261, 72%, 63%);
   box-shadow: 0 6px 0 0 hsl(261, 82%, 53%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
 }
 
 .spock {
   position: relative;
-  bottom: 470px;
+  bottom: 460px;
   border: 18px solid hsl(189, 58%, 57%);
   box-shadow: 0 6px 0 0 hsl(189, 68%, 47%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
@@ -134,7 +136,7 @@ body {
 .contest {
   width: 900px;
   display: none;
-  margin-top: 80px;
+  margin-top: 130px;
   margin-bottom: 100px;
 }
 
@@ -242,7 +244,7 @@ body {
 /* Rules Section */
 .rules {
   width: 90vw;
-  margin-top: 130px;
+  margin-top: 120px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: row;
@@ -308,13 +310,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
   }
 
   .scoreboard {
     width: 600px;
     border: 1px solid white;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 0;
     height: 150px;
     display: flex;
     justify-content: space-between;
@@ -328,52 +331,106 @@ body {
     background-image: url(/assets/images/bg-pentagon.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 440px;
+    width: 500px;
     height: 380px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    scale: 70%;
+    scale: 60%;
   }
 
   /* The Contest Styling */
   .contest {
-    width: 600px;
+    width: 700px;
     display: none;
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 30px;
     scale: 50%;
   }
 
+  .contest h1 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .contest>div {
+    flex: 1;
+  }
+
   .judge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    transform: translate(-50%, 50%);
+    scale: 90%;
+  }
+
+  .judge h1 {
+    font-size: 4em;
+    letter-spacing: 2px;
+  }
+
+  .newgame {
+    background-color: white;
+    letter-spacing: 2px;
+    padding: 30px 4em;
+    border-radius: 16px;
+    cursor: pointer;
+    color: hsl(229, 25%, 31%);
+    font-size: 1.2em;
+    font-weight: bolder;
+    transition: all 0.15s;
+    scale: 125%;
   }
 
   /* Rules Section */
   .rules {
     width: 600px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    scale: 90%;
+  }
+
+  .rule {
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 2px;
+    padding: 12px 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .35s;
   }
 
   .ruleimg {
     position: absolute;
     top: 40%;
     left: 42%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
     flex-direction: column;
     padding: 90px;
     border-radius: 20px;
     background-color: white;
     display: none;
     scale: 85%;
+  }
+
+  .ruleimg img {
+    padding: 0;
+    margin: 0;
+  }
+
+  .attribution {
+    font-size: 8px
   }
 }
