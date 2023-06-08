@@ -25,7 +25,7 @@ body {
   width: 700px;
   border: 1px solid white;
   border-radius: 15px;
-  margin-top: 50px;
+  margin-top: 20px;
   height: 150px;
   display: flex;
   justify-content: space-between;
@@ -72,7 +72,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 140px;
+  margin-top: 80px;
+  scale: 80%;
 }
 
 .hands .hand {
@@ -85,7 +86,7 @@ body {
   opacity: 0.86;
 }
 
-.hand {
+.hands .hand {
   width: 140px;
   height: 140px;
   background: white;
@@ -113,14 +114,14 @@ body {
 
 .rock {
   margin-top: 60px;
-  margin-right: 45px;
+  margin-right: 40px;
   border: 18px solid hsl(349, 70%, 56%);
   box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
 }
 
 .lizard {
   margin-top: 60px;
-  margin-left: 40px;
+  margin-left: 30px;
   border: 18px solid hsl(261, 72%, 63%);
   box-shadow: 0 6px 0 0 hsl(261, 82%, 53%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
 }
@@ -197,12 +198,12 @@ body {
 .userhand>div {
   width: 90px;
   height: 90px;
-  padding: 100px;
+  /* padding: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 200px;
+  border-radius: 200px; */
 }
 
 .computerhand {
@@ -215,16 +216,15 @@ body {
 .computerhand>div {
   width: 90px;
   height: 90px;
-  padding: 100px;
+  /* padding: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border-radius: 200px;
+  border-radius: 200px; */
 }
 
 /* Rock Paper Scissors Styling Contest Box */
-#computerChoiceHand .paper {
+/* .contest .hand .paper {
   margin-right: 45px;
   border: 18px solid hsl(230, 89%, 65%);
   box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
@@ -239,13 +239,13 @@ body {
 #computerChoiceHand .rock {
   border: 18px solid hsl(349, 70%, 56%);
   box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
-}
+} */
 
 /* Rules Section */
 .rules {
   width: 90vw;
-  margin-top: 120px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -271,7 +271,7 @@ body {
 
 .ruleimg {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -40%);
   flex-direction: column;
@@ -331,31 +331,31 @@ body {
     background-image: url(/assets/images/bg-pentagon.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 500px;
+    width: 450px;
     height: 380px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
-    margin-bottom: 10px;
-    scale: 60%;
+    margin-bottom: 5px;
+    scale: 55%;
   }
 
   /* The Contest Styling */
   .contest {
-    width: 700px;
+    width: 550px;
     display: none;
-    margin-top: 0;
-    margin-bottom: 30px;
-    scale: 50%;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    scale: 70%;
   }
 
   .contest h1 {
     color: white;
     letter-spacing: 2px;
     font-size: 30px;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 70px;
     text-align: center;
   }
 
@@ -365,7 +365,7 @@ body {
 
   .judge {
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 48%;
     transform: translate(-50%, 50%);
     scale: 90%;
@@ -386,7 +386,7 @@ body {
     font-size: 1.2em;
     font-weight: bolder;
     transition: all 0.15s;
-    scale: 125%;
+    scale: 90%;
   }
 
   /* Rules Section */
@@ -414,15 +414,15 @@ body {
 
   .ruleimg {
     position: absolute;
-    top: 40%;
-    left: 42%;
+    top: -800%;
+    left: 33%;
     transform: translate(-50%, -50%);
     flex-direction: column;
     padding: 90px;
     border-radius: 20px;
     background-color: white;
     display: none;
-    scale: 85%;
+    scale: 60%;
   }
 
   .ruleimg img {

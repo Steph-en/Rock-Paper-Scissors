@@ -177,14 +177,14 @@ body {
 }
 
 .userhand>div {
-  width: 90px;
-  height: 90px;
-  padding: 100px;
+  width: 150px;
+  height: 150px;
+  /* padding: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 200px;
+  border-radius: 200px; */
 }
 
 .computerhand {
@@ -195,18 +195,18 @@ body {
 }
 
 .computerhand>div {
-  width: 90px;
-  height: 90px;
-  padding: 100px;
+  width: 150px;
+  height: 150px;
+  /* padding: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 200px;
+  border-radius: 200px; */
 }
 
 /* Rock Paper Scissors Styling Contest Box */
-#userChoiceHand .paper {
+#userChoiceHand .hand .paper {
   margin-right: 45px;
   border: 18px solid hsl(230, 89%, 65%);
   box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
@@ -366,7 +366,7 @@ body {
     align-items: center;
     overflow: hidden;
   }
-  
+
   .scoreboard {
     width: 600px;
     border: 1px solid white;
@@ -376,8 +376,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    scale: 50%;
+    padding: 15px;
+    scale: 55%;
   }
 
   /* Rock Paper Scissors Box Styling */
@@ -397,12 +397,12 @@ body {
 
   /* The Contest Styling */
   .contest {
-    width: 700px;
+    width: 600px;
     padding: 20px 0px;
     display: none;
-    margin-top: 0;
-    margin-bottom: 50px;
-    scale: 50%;
+    margin-top: 50px;
+    margin-bottom: 180px;
+    scale: 80%;
   }
 
   .contest h1 {
@@ -434,7 +434,7 @@ body {
   .newgame {
     background-color: white;
     letter-spacing: 2px;
-    padding: 30px 3em;
+    padding: 23px 3em;
     border-radius: 16px;
     cursor: pointer;
     color: hsl(229, 25%, 31%);
@@ -446,13 +446,13 @@ body {
 
   /* Rules Section */
   .rules {
-    /* width: 600px; */
+    width: 600px;
     margin-top: 60px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    scale: 80%;
+    scale: 90%;
   }
 
   .rule {
@@ -468,16 +468,21 @@ body {
   }
 
   .ruleimg {
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    top: -26em;
+    left: 15em;
+    width: 450px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    /* padding: 90px; */
-    border-radius: 20px;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 70px;
+    border-radius: 30px;
     background-color: white;
     letter-spacing: 2px;
     display: none;
-    scale: 50%;
+    /* scale: 50%; */
   }
 
   .ruleimg img {

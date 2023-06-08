@@ -1,7 +1,7 @@
 const handOptions = {
-  "paper": "/assets/images/icon-paper.svg",
-  "scissors": "/assets/images/icon-scissors.svg",
-  "rock": "/assets/images/icon-rock.svg"
+  "paper": "/assets/images/Paper.png",
+  "scissors": "/assets/images/Scissors.png",
+  "rock": "/assets/images/Rock.png"
 }
 
 let Score = 0;
@@ -68,7 +68,7 @@ const judge = (userHand, computerHand) => {
     setScore(Score + 1);
   } 
   else if (userHand == computerHand) {
-    setDecision("It's a Tie");
+    setDecision(" ");
   }
 }
 

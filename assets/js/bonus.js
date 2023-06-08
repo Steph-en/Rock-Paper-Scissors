@@ -1,9 +1,9 @@
 const handOptions = {
-  "paper": "/assets/images/icon-paper.svg",
-  "scissors": "/assets/images/icon-scissors.svg",
-  "rock": "/assets/images/icon-rock.svg",
-  "lizard": "/assets/images/icon-lizard.svg",
-  "spock": "/assets/images/icon-spock.svg"
+  "paper": "/assets/images/Paper.png",
+  "scissors": "/assets/images/Scissors.png",
+  "rock": "/assets/images/Rock.png",
+  "lizard": "/assets/images/lizard.png",
+  "spock": "/assets/images/spock.png"
 }
 
 let Score = 0;
@@ -41,7 +41,9 @@ const pickComputerHand = () => {
 const judge = (userHand, computerHand) => {
   if (userHand == "paper" && computerHand == "scissors") {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   if (userHand == "paper" && computerHand == "rock") {
     setDecision("You Win");
@@ -49,7 +51,9 @@ const judge = (userHand, computerHand) => {
   }
   if (userHand == "paper" && computerHand == "lizard") {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   if (userHand == "paper" && computerHand == "spock") {
     setDecision("You Win");
@@ -57,7 +61,9 @@ const judge = (userHand, computerHand) => {
   }
   if (userHand == "scissors" && computerHand == "rock") {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   if (userHand == "scissors" && computerHand == "paper") {
     setDecision("You Win");
@@ -65,7 +71,9 @@ const judge = (userHand, computerHand) => {
   }
   if (userHand == "scissors" && computerHand == "spock") {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   if (userHand == "scissors" && computerHand == "lizard") {
     setDecision("You Win");
@@ -73,7 +81,9 @@ const judge = (userHand, computerHand) => {
   }
   if (userHand == "rock" && computerHand == "paper") {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   if (userHand == "rock" && computerHand == "scissors") {
     setDecision("You Win");
@@ -81,7 +91,9 @@ const judge = (userHand, computerHand) => {
   }
   if ((userHand == "rock" && computerHand == "spock")) {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   if ((userHand == "rock" && computerHand == "lizard")) {
     setDecision("You Win");
@@ -93,7 +105,9 @@ const judge = (userHand, computerHand) => {
   }
   if ((userHand == "lizard" && computerHand == "scissors")) {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   if ((userHand == "lizard" && computerHand == "spock")) {
     setDecision("You Win");
@@ -101,7 +115,9 @@ const judge = (userHand, computerHand) => {
   }
   if ((userHand == "lizard" && computerHand == "rock")) {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   if ((userHand == "spock" && computerHand == "scissors")) {
     setDecision("You Win");
@@ -109,7 +125,9 @@ const judge = (userHand, computerHand) => {
   }
   if ((userHand == "spock" && computerHand == "lizard")) {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   if ((userHand == "spock" && computerHand == "rock")) {
     setDecision("You Win");
@@ -117,10 +135,12 @@ const judge = (userHand, computerHand) => {
   }
   if ((userHand == "spock" && computerHand == "paper")) {
     setDecision("You Lose");
-    setScore(Score - 1);
+    if (Score > 0) {
+      setScore(Score - 1);
+    }
   }
   else if (userHand == computerHand) {
-    setDecision("");
+    setDecision(" ");
   }
 }
 
