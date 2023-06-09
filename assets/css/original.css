@@ -179,12 +179,6 @@ body {
 .userhand>div {
   width: 150px;
   height: 150px;
-  /* padding: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 200px; */
 }
 
 .computerhand {
@@ -197,12 +191,6 @@ body {
 .computerhand>div {
   width: 150px;
   height: 150px;
-  /* padding: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 200px; */
 }
 
 /* Rock Paper Scissors Styling Contest Box */

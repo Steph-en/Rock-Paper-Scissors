@@ -72,7 +72,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 100px;
   scale: 80%;
 }
 
@@ -137,7 +137,7 @@ body {
 .contest {
   width: 900px;
   display: none;
-  margin-top: 130px;
+  margin-top: 180px;
   margin-bottom: 100px;
 }
 
@@ -153,7 +153,7 @@ body {
 .contest h1 {
   color: white;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -198,12 +198,6 @@ body {
 .userhand>div {
   width: 90px;
   height: 90px;
-  /* padding: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 200px; */
 }
 
 .computerhand {
@@ -216,35 +210,12 @@ body {
 .computerhand>div {
   width: 90px;
   height: 90px;
-  /* padding: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 200px; */
 }
-
-/* Rock Paper Scissors Styling Contest Box */
-/* .contest .hand .paper {
-  margin-right: 45px;
-  border: 18px solid hsl(230, 89%, 65%);
-  box-shadow: 0 6px 0 0 hsl(231, 94%, 42%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
-}
-
-#computerChoiceHand .scissors {
-  margin-left: 45px;
-  border: 18px solid hsl(40, 84%, 53%);
-  box-shadow: 0 6px 0 0 hsl(40, 94%, 40%), inset 0 6px 3px 0 hsl(240, 1%, 63%)
-}
-
-#computerChoiceHand .rock {
-  border: 18px solid hsl(349, 70%, 56%);
-  box-shadow: 0 6px 0 0 hsl(350, 94%, 32%), inset 0 6px 3px 0 hsl(240, 1%, 63%);
-} */
 
 /* Rules Section */
 .rules {
   width: 90vw;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
